@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flickup — One podcast. Sixty shorts.</title>
+<meta name="description" content="Drop your hour-long podcast in. Get sixty scroll-stopping vertical clips with captions, tuned per platform.">
+<meta property="og:title" content="Flickup — One podcast. Sixty shorts.">
+<meta property="og:description" content="Drop your hour-long podcast in. Get sixty scroll-stopping vertical clips with captions, tuned per platform.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  * { -webkit-font-smoothing: antialiased; }
+</style>
+</head>
+<body class="bg-white text-neutral-900 min-h-screen">
+
+<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+  <a href="/" class="flex items-center gap-2 text-lg font-bold tracking-tight">
+    <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+    Flickup
+  </a>
+  <div class="flex items-center gap-4 text-sm">
+    <a href="#demo" class="hidden sm:inline hover:opacity-70">See a demo</a>
+    <a href="#waitlist" class="rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-neutral-700">Get early access</a>
+  </div>
+</nav>
+
+<section class="relative overflow-hidden">
+  <div class="absolute inset-x-0 top-0 -z-10 h-[500px] bg-gradient-to-b from-emerald-100 via-emerald-50 to-transparent opacity-60"></div>
+  <div class="mx-auto max-w-4xl px-6 pt-20 pb-20 text-center sm:pt-28">
+    <p class="mb-5 inline-block rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-700">
+      Creator tools
+    </p>
+    <h1 class="text-5xl font-bold leading-[1.05] tracking-tight text-neutral-900 sm:text-7xl">
+      One podcast. Sixty shorts.
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-neutral-600 sm:text-xl">
+      Drop your hour-long podcast in. Get sixty scroll-stopping vertical clips with captions, tuned per platform.
+    </p>
+    <form id="waitlist" class="mt-12 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+      <input type="email" placeholder="you@email.com" required
+        class="w-full rounded-full border border-neutral-300 bg-white px-5 py-3.5 text-base placeholder-neutral-400 focus:border-neutral-900 focus:outline-none focus:ring-4 focus:ring-neutral-900/10 sm:w-80" />
+      <button type="submit"
+        class="rounded-full bg-neutral-900 px-7 py-3.5 font-medium text-white transition hover:bg-neutral-700">
+        Join the waitlist
+      </button>
+    </form>
+    <p id="thanks" class="mt-4 hidden text-sm font-medium text-emerald-700">
+      Thanks. We will ping you the day we launch.
+    </p>
+    <p class="mt-6 text-xs text-neutral-400">
+      Join <span class="font-semibold text-neutral-700">1,284</span> people already on the waitlist
+    </p>
+  </div>
+</section>
+
+<section id="demo" class="border-y border-neutral-200 bg-neutral-50 py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-widest text-emerald-600">Live preview</p>
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">See it in action</h2>
+    </div>
+    <div class="mt-12">
+      
+    <div class="mx-auto max-w-3xl grid grid-cols-5 gap-2">
+      <div class="aspect-[9/16] rounded-xl bg-gradient-to-br from-emerald-400 to-teal-600 p-2 flex flex-col justify-end"><span class="text-xs text-white font-bold">0:23</span></div>
+      <div class="aspect-[9/16] rounded-xl bg-gradient-to-br from-pink-400 to-purple-600 p-2 flex flex-col justify-end"><span class="text-xs text-white font-bold">0:41</span></div>
+      <div class="aspect-[9/16] rounded-xl bg-gradient-to-br from-amber-400 to-red-500 p-2 flex flex-col justify-end"><span class="text-xs text-white font-bold">0:58</span></div>
+      <div class="aspect-[9/16] rounded-xl bg-gradient-to-br from-blue-400 to-indigo-600 p-2 flex flex-col justify-end"><span class="text-xs text-white font-bold">1:12</span></div>
+      <div class="aspect-[9/16] rounded-xl bg-gradient-to-br from-slate-400 to-stone-600 p-2 flex flex-col justify-end"><span class="text-xs text-white font-bold">+56</span></div>
+    </div>
+    <p class="mt-4 text-center text-sm text-neutral-500">60-minute podcast → 60 scroll-stopping shorts · ready to post</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">What you get</h2>
+    </div>
+    <div class="mt-12 grid gap-12 sm:grid-cols-3">
+      
+      <div>
+        <div class="text-3xl">🎯</div>
+        <h3 class="mt-4 text-lg font-semibold tracking-tight">Auto-finds the viral moments</h3>
+        <p class="mt-2 leading-relaxed text-neutral-600">Not random clips — the ones that actually hook, punchlined by real models.</p>
+      </div>
+      <div>
+        <div class="text-3xl">💬</div>
+        <h3 class="mt-4 text-lg font-semibold tracking-tight">Captions in your style</h3>
+        <p class="mt-2 leading-relaxed text-neutral-600">Animated, punchy, accurate. Your brand voice, not a generic preset.</p>
+      </div>
+      <div>
+        <div class="text-3xl">📆</div>
+        <h3 class="mt-4 text-lg font-semibold tracking-tight">Schedules everything</h3>
+        <p class="mt-2 leading-relaxed text-neutral-600">Connect TikTok, Shorts, Reels. We spread the clips across the week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="border-t border-neutral-200 bg-neutral-50 py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-widest text-emerald-600">How it works</p>
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Three steps. No learning curve.</h2>
+    </div>
+    <div class="mt-12 grid gap-12 sm:grid-cols-3">
+      
+      <div>
+        <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-700">1</div>
+        <h3 class="text-lg font-semibold tracking-tight">Sign up in seconds</h3>
+        <p class="mt-2 leading-relaxed text-neutral-600">Email only. No credit card. You're in before you can overthink it.</p>
+      </div>
+      <div>
+        <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-700">2</div>
+        <h3 class="text-lg font-semibold tracking-tight">Set up your context</h3>
+        <p class="mt-2 leading-relaxed text-neutral-600">Tell us what you're working on. The whole product tunes around that.</p>
+      </div>
+      <div>
+        <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-700">3</div>
+        <h3 class="text-lg font-semibold tracking-tight">Get value on day one</h3>
+        <p class="mt-2 leading-relaxed text-neutral-600">Not week two. Day one. That's how fast you'll know it's working.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mx-auto max-w-4xl px-6 py-28 text-center">
+  <h2 class="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
+    Be the first in line.
+  </h2>
+  <p class="mx-auto mt-3 max-w-xl text-neutral-600">
+    Early access starts soon. Get on the list and we will reach out the moment we open the doors.
+  </p>
+  <a href="#waitlist"
+    class="mt-8 inline-block rounded-full bg-emerald-600 px-7 py-3.5 font-medium text-white transition hover:bg-emerald-700">
+    Reserve my spot
+  </a>
+</section>
+
+<footer class="border-t border-neutral-200">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-8 text-sm text-neutral-500">
+    <p class="flex items-center gap-2">
+      <span class="inline-block h-2 w-2 rounded-full bg-emerald-500"></span>
+      Flickup
+    </p>
+    <p>© 2026</p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    const WAITLIST_API = 'https://waitlist-api-sigma.vercel.app/api/waitlist';
+    const PRODUCT = 'flickup';
+    const form = document.getElementById('waitlist');
+    const thanks = document.getElementById('thanks');
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      const email = this.querySelector('input[type="email"]').value.trim();
+      if (!email) return;
+      form.style.display = 'none';
+      thanks.classList.remove('hidden');
+      try {
+        await fetch(WAITLIST_API, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, product: PRODUCT })
+        });
+      } catch (err) {
+        console.warn('waitlist post failed', err);
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
