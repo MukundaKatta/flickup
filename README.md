@@ -1,22 +1,47 @@
 # Flickup
 
-> One podcast. Sixty shorts.
+One podcast. Sixty scroll-stopping shorts.
 
-Drop your hour-long podcast in. Get sixty scroll-stopping vertical clips with captions, tuned per platform.
+**Status:** v0 skeleton — landing page + clip-finder route. Full AI not yet wired.
 
-## What you get
+**Landing:** https://flickup.vercel.app
 
-- **Auto-finds the viral moments** — Not random clips — the ones that actually hook, punchlined by real models.
-- **Captions in your style** — Animated, punchy, accurate. Your brand voice, not a generic preset.
-- **Schedules everything** — Connect TikTok, Shorts, Reels. We spread the clips across the week.
+---
 
-## Category
+## Stack
 
-Creator tools. Part of a 50-product exploration of high-demand consumer and SMB markets.
+| Layer | Choice |
+|---|---|
+| Framework | Next.js 15 (App Router) |
+| Language | TypeScript (strict) |
+| Styling | Tailwind v4 |
+| Fonts | Inter via `next/font/google` |
+| Hosting | Vercel (zero config) |
+| Waitlist | https://waitlist-api-sigma.vercel.app |
 
-## Status
+## Run locally
 
-Landing page live with interactive demo and functional waitlist.
+```bash
+pnpm install
+pnpm dev
+```
 
-- **Live:** https://mukundakatta.github.io/flickup/
-- **Waitlist API:** https://waitlist-api-sigma.vercel.app/api/waitlist
+Open http://localhost:3000.
+
+## Deploy
+
+Push to `main` — Vercel picks it up automatically. No environment variables required.
+
+## Routes
+
+| Route | Description |
+|---|---|
+| `/` | Landing page (original copy + design preserved) |
+| `/try` | v0 clip finder — paste a transcript, get 3 mocked clipworthy moments |
+| `/api/waitlist` | `POST { email }` → forwards to waitlist-api-sigma |
+
+## What's next
+
+- Wire real AI (clip detection + caption generation) behind `/try`
+- Multi-platform export (TikTok, Reels, Shorts)
+- Scheduling integration
